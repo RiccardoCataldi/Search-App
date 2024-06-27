@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pagination.js.org/dist/2.1.4/pagination.css" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Search App</h1>
+    <form id="searchForm">
+      <div class="mb-3">
+        <label for="mmsiInput" class="form-label">MMSI:</label>
+        <input type="text" class="form-control" id="mmsiInput" placeholder="Enter MMSI">
+      </div>
+      <div class="mb-3">
+        <label for="searchTypeSelect" class="form-label">Search Type:</label>
+        <select class="form-select" id="searchTypeSelect">
+          <option value="trajectory">Get Trajectory</option>
+          <option value="trajectory_length">Get Trajectory Length</option>
+          <option value="ship_type">Get Ship Type</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+    <hr>
+    <div id="resultContainer">
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center" id="pagination">
+      </ul>
+    </nav>
+  </div>
+
+  <button id="backToTopBtn" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 1 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.2/jquery.twbsPagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
