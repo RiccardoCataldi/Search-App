@@ -9,6 +9,8 @@ Web app that allows searching information about ships via MMSI, including trajec
 
 - [Download](https://drive.google.com/file/d/12y173qPxskitWrmC7BRloHcXaq5Vtgdj) The second dataset **aisdk-2024-02-02-tanker.csv**
 
+- After downloading the CSV files, copy or move them into the main project directory.
+
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies.
 
 ```bash
@@ -25,6 +27,7 @@ pip install -r .\requirements.txt
 - Search: Enter an MMSI in the form and select the desired search type. Click the "Search" button to retrieve information.
 
 ## Notes
-- Virtual environment is recommended
-- Tested on Python 3.12.4
+- Virtual Environment: It is recommended to use a virtual environment to manage dependencies and ensure a clean environment.
+
+- Python Version: The application has been tested on Python 3.12.4.
 
