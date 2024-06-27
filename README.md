@@ -4,9 +4,11 @@ Web app that allows searching information about ships via MMSI, including trajec
 
 ## Installation
 
-- Clone Repository:
-    Clone the repository to your local machine:
-    git clone https://github.com/RiccardoCataldi/Search-App.git
+- Clone the repository to your local machine:
+```bash
+git clone https://github.com/RiccardoCataldi/Search-App.git
+```
+    
 
 -  [Download](https://drive.google.com/file/d/1M8rGHk5xnxGmvG3fIiN_L1yD_aaU6-Y1)
  The first datasets **aisdk-2024-02-02-cargo.csv** 
