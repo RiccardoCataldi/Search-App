@@ -1,8 +1,6 @@
 # Search App
 Web app that allows searching information about ships via MMSI, including trajectory, length, and ship type.
 
-App is currently running at this ip for immediate testing at IP: 51.20.82.208
-
 ## Installation
 
 - Clone the repository to your local machine:
